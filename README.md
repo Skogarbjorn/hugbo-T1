@@ -59,3 +59,117 @@ i think thats the gist of it, there will be more specialized routes for manager 
 # other shit to do
 
 attach audit to all tables, look at fucking java spring documentation fuckthisshit
+
+# ENDPOINTS
+
+* /users
+- [ ] GET all
+
+* /users/register
+- [ ] POST
+
+* /users/login
+- [ ] POST
+
+* /users?id
+- [ ] GET PATCH DELETE
+
+* /companies
+- [ ] GET
+- [ ] POST
+
+* /companies?id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+* /locations
+- [ ] GET
+- [ ] POST
+
+* /locations?params
+- [ ] GET company
+
+* /locations?id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+* /registrations
+- [ ] GET
+
+* /registrations?id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+* /registrations?user_id
+- [ ] GET
+
+* /tasks
+- [ ] GET
+- [ ] POST
+
+* /tasks?id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+* /tasks?params
+- [ ] GET
+
+* /shifts
+- [ ] GET
+- [ ] POST
+
+* /shifts?id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+* /shifts?id/breaks
+- [ ] GET
+- [ ] POST
+
+* /shifts?id/breaks?id
+- [ ] GET
+- [ ] PATCH
+
+* /shifts?id/breaks?params
+- [ ] GET
+
+* /shifts?id/tasks
+- [ ] GET
+- [ ] POST
+
+* /shifts?id/tasks?id
+- [ ] GET
+- [ ] PATCH
+
+* /shifts?id/tasks?params
+- [ ] GET
+
+* /shifts?id/locations
+- [ ] GET
+- [ ] POST
+
+* /shifts?id/locations?id
+- [ ] GET
+- [ ] PATCH
+
+* /shifts?id/locations?params
+- [ ] GET
+
+* /requests
+- [ ] GET
+- [ ] POST
+
+* /requests?params
+- [ ] GET
+
+* /requests?id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+

@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class ClockInApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(ClockInApplication.class, args);
-	}
+    public static void main(String[] args) {
+    	SpringApplication.run(ClockInApplication.class, args);
+    }
 
     @GetMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "world") String name) {
