@@ -1,69 +1,25 @@
-# ROUTES todo!
-
-## Users
-- [ ] GET your profile
-- [ ] POST (register)
-- [ ] POST (login)
-- [ ] PATCH
-- [ ] DELETE
-
-## Companies
-- [ ] GET by user_company_contracts (to be shown on dashboard - includes basic contract info like role)
-- [ ] POST
-- [ ] PATCH
-- [ ] DELETE (deactivate - thinking soft deletion...)
-
-## Locations
-- [ ] GET all by company
-- [ ] POST
-- [ ] PATCH
-- [ ] DELETE
-
-## User_company_contracts
-- [ ] GET all for current user (ties in to GET companies)
-- [ ] POST
-- [ ] PATCH
-- [ ] DELETE
-
-## Tasks
-- [ ] GET all by company
-- [ ] GET by location
-- [ ] GET by active  (maybe consolidate all into parameterized query?)
-- [ ] POST
-- [ ] PATCH
-- [ ] PATCH finish
-- [ ] PATCH toggle active
-- [ ] DELETE (ig?)
-
-## Shifts and all that
-- [ ] POST clock in
-- [ ] POST clock out
-- [ ] POST change location
-- [ ] POST change task
-- [ ] POST start break
-- [ ] POST end break
-- [ ] GET current shift
-- [ ] GET history of shift for user
-- [ ] GET all shifts
-- [ ] GET by location
-- [ ] GET by employee
-- [ ] GET by time frame (maybe consolidate into parameterized query or something idk?)
-
-## Shift requests
-- [ ] POST new request
-- [ ] GET requests by filter
-- [ ] POST review request (approve / dismiss whatever)
-
-i think thats the gist of it, there will be more specialized routes for manager dashboard and stuff but thats later, add if any more come to mind
-
-# other shit to do
-
-attach audit to all tables, look at fucking java spring documentation fuckthisshit
-
 # ENDPOINTS
 
 * /users
-- [ ] GET all
+- [ ] CRUD
+* /companies
+- [ ] CRUD
+* /locations
+- [ ] CRUD
+* /contracts
+- [ ] CRUD
+* /tasks
+- [ ] CRUD
+* /shifts
+- [ ] CRUD
+* /shifts/:id/tasks
+- [ ] CRUD
+* /shifts/:id/locations
+- [ ] CRUD
+* /shifts/:id/breaks
+- [ ] CRUD
+* /requests
+- [ ] CRUD
 
 * /users/register
 - [ ] POST
@@ -71,105 +27,107 @@ attach audit to all tables, look at fucking java spring documentation fuckthissh
 * /users/login
 - [ ] POST
 
-* /users?id
-- [ ] GET PATCH DELETE
-
-* /companies
-- [ ] GET
-- [ ] POST
-
-* /companies?id
+* /users/:id
 - [ ] GET
 - [ ] PATCH
 - [ ] DELETE
 
-* /locations
-- [ ] GET
-- [ ] POST
-
-* /locations?params
-- [ ] GET company
-
-* /locations?id
+* /company/:id
 - [ ] GET
 - [ ] PATCH
 - [ ] DELETE
 
-* /registrations
+* /company/:id/locations
+- [ ] GET
+- [ ] POST
+
+* /company/:id/locations?params
 - [ ] GET
 
-* /registrations?id
+* /company/:id/locations/:id
 - [ ] GET
 - [ ] PATCH
 - [ ] DELETE
 
-* /registrations?user_id
+* /user/:id/contracts
 - [ ] GET
 
-* /tasks
-- [ ] GET
-- [ ] POST
-
-* /tasks?id
+* /user/:id/contracts/:id (maybe sus)
 - [ ] GET
 - [ ] PATCH
 - [ ] DELETE
 
-* /tasks?params
-- [ ] GET
-
-* /shifts
+* /company/:id/tasks
 - [ ] GET
 - [ ] POST
 
-* /shifts?id
+* /company/:id/tasks?params
+- [ ] GET
+
+* /company/:id/tasks/:id
 - [ ] GET
 - [ ] PATCH
 - [ ] DELETE
 
-* /shifts?id/breaks
+* /company/:id/shifts
 - [ ] GET
 - [ ] POST
 
-* /shifts?id/breaks?id
-- [ ] GET
-- [ ] PATCH
-
-* /shifts?id/breaks?params
+* /company/:id/shifts?params
 - [ ] GET
 
-* /shifts?id/tasks
-- [ ] GET
-- [ ] POST
-
-* /shifts?id/tasks?id
-- [ ] GET
-- [ ] PATCH
-
-* /shifts?id/tasks?params
-- [ ] GET
-
-* /shifts?id/locations
-- [ ] GET
-- [ ] POST
-
-* /shifts?id/locations?id
-- [ ] GET
-- [ ] PATCH
-
-* /shifts?id/locations?params
-- [ ] GET
-
-* /requests
-- [ ] GET
-- [ ] POST
-
-* /requests?params
-- [ ] GET
-
-* /requests?id
+* /company/:id/shifts/:id
 - [ ] GET
 - [ ] PATCH
 - [ ] DELETE
 
+* /company/:id/shifts/:id/breaks
+- [ ] GET
+- [ ] POST
 
+* /company/:id/shifts/:id/breaks/:id
+- [ ] GET
+- [ ] PATCH
+
+* /company/:id/shifts/:id/breaks?params
+- [ ] GET
+
+* /company/:id/shifts/:id/tasks
+- [ ] GET
+- [ ] POST
+
+* /company/:id/shifts/:id/tasks/:id
+- [ ] GET
+- [ ] PATCH
+
+* /company/:id/shifts/:id/tasks?params
+- [ ] GET
+
+* /company/:id/shifts/:id/locations
+- [ ] GET
+- [ ] POST
+
+* /company/:id/shifts/:id/locations/:id
+- [ ] GET
+- [ ] PATCH
+
+* /company/:id/shifts/:id/locations?params
+- [ ] GET
+
+* /company/:id/requests
+- [ ] GET
+- [ ] POST
+
+* /company/:id/requests?params
+- [ ] GET
+
+* /company/:id/requests/:id
+- [ ] GET
+- [ ] PATCH
+- [ ] DELETE
+
+i think thats the gist of it, there will be more specialized routes for manager dashboard and stuff but thats later, add if any more come to mind
+
+# other shit to do
+
+attach audit to all tables, look at fucking java spring documentation fuckthisshit
