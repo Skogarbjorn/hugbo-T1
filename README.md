@@ -1,9 +1,9 @@
 # ENDPOINTS
 
 * /users
-- [ ] CRUD
+    - [ ] CRUD
 * /companies
-- [ ] CRUD
+    - [ ] CRUD
 * /locations
 - [ ] CRUD
 * /contracts
