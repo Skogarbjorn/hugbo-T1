@@ -1,31 +1,31 @@
 # ROUTES todo!
 
-* ## Users
+## Users
 - [ ] GET your profile
 - [ ] POST (register)
 - [ ] POST (login)
 - [ ] PATCH
 - [ ] DELETE
 
-* ## Companies
+## Companies
 - [ ] GET by user_company_contracts (to be shown on dashboard - includes basic contract info like role)
 - [ ] POST
 - [ ] PATCH
 - [ ] DELETE (deactivate - thinking soft deletion...)
 
-* ## Locations
+## Locations
 - [ ] GET all by company
 - [ ] POST
 - [ ] PATCH
 - [ ] DELETE
 
-* ## User_company_contracts
+## User_company_contracts
 - [ ] GET all for current user (ties in to GET companies)
 - [ ] POST
 - [ ] PATCH
 - [ ] DELETE
 
-* ## Tasks
+## Tasks
 - [ ] GET all by company
 - [ ] GET by location
 - [ ] GET by active  (maybe consolidate all into parameterized query?)
@@ -35,7 +35,7 @@
 - [ ] PATCH toggle active
 - [ ] DELETE (ig?)
 
-* ## Shifts and all that
+## Shifts and all that
 - [ ] POST clock in
 - [ ] POST clock out
 - [ ] POST change location
@@ -49,7 +49,7 @@
 - [ ] GET by employee
 - [ ] GET by time frame (maybe consolidate into parameterized query or something idk?)
 
-* ## Shift requests
+## Shift requests
 - [ ] POST new request
 - [ ] GET requests by filter
 - [ ] POST review request (approve / dismiss whatever)
