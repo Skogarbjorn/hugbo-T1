@@ -55,3 +55,7 @@
 - [ ] POST review request (approve / dismiss whatever)
 
 i think thats the gist of it, there will be more specialized routes for manager dashboard and stuff but thats later, add if any more come to mind
+
+# other shit to do
+
+attach audit to all tables, look at fucking java spring documentation fuckthisshit
