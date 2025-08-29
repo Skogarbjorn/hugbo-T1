@@ -1,130 +1,103 @@
 # ENDPOINTS
 
 * /users
-    - [ ] CRUD
+	- [ ] CRUD
 * /companies
-    - [ ] CRUD
+	- [ ] CRUD
 * /locations
-    - [ ] CRUD
+	- [ ] CRUD
 * /contracts
-    - [ ] CRUD
+	- [ ] CRUD
 * /tasks
-    - [ ] CRUD
+	- [ ] CRUD
 * /shifts
-    - [ ] CRUD
+	- [ ] CRUD
 * /shifts/:id/tasks
-    - [ ] CRUD
+	- [ ] CRUD
 * /shifts/:id/locations
-    - [ ] CRUD
+	- [ ] CRUD
 * /shifts/:id/breaks
-    - [ ] CRUD
+	- [ ] CRUD
 * /requests
-    - [ ] CRUD
-
+	- [ ] CRUD
 * /users/register
-    - [ ] POST
-
+	- [ ] POST
 * /users/login
-    - [ ] POST
-
+	- [ ] POST
 * /users/:id
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
-
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 * /company/:id
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
-
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 * /company/:id/locations
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/locations?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/locations/:id
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
-
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 * /user/:id/contracts
-    - [ ] GET
-
+	- [ ] GET
 * /user/:id/contracts/:id (maybe sus)
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
-
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 * /company/:id/tasks
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/tasks?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/tasks/:id
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
-
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 * /company/:id/shifts
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/shifts?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/shifts/:id
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
-
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 * /company/:id/shifts/:id/breaks
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/shifts/:id/breaks/:id
-    - [ ] GET
-    - [ ] PATCH
-
+	- [ ] GET
+	- [ ] PATCH
 * /company/:id/shifts/:id/breaks?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/shifts/:id/tasks
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/shifts/:id/tasks/:id
-    - [ ] GET
-    - [ ] PATCH
-
+	- [ ] GET
+	- [ ] PATCH
 * /company/:id/shifts/:id/tasks?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/shifts/:id/locations
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/shifts/:id/locations/:id
-    - [ ] GET
-    - [ ] PATCH
-
+	- [ ] GET
+	- [ ] PATCH
 * /company/:id/shifts/:id/locations?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/requests
-    - [ ] GET
-    - [ ] POST
-
+	- [ ] GET
+	- [ ] POST
 * /company/:id/requests?params
-    - [ ] GET
-
+	- [ ] GET
 * /company/:id/requests/:id
-    - [ ] GET
-    - [ ] PATCH
-    - [ ] DELETE
+	- [ ] GET
+	- [ ] PATCH
+	- [ ] DELETE
 
 i think thats the gist of it, there will be more specialized routes for manager dashboard and stuff but thats later, add if any more come to mind
 
